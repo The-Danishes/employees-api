@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   get "/employees", to: "employees#index"
 
   post "/employees", to: "employees#create"
+  patch "/employee/:id", to: "employees#update"
+
+  delete "/employee/:id", to: "employees#destroy"
+
 end
