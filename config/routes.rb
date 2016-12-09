@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get "/employee/:id", to: "employees#show"
   get "/employees", to: "employees#index"
-  post "/employees", to: "employees#create"
+
 end
