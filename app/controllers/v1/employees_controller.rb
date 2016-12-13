@@ -1,4 +1,4 @@
-class EmployeesController < ApplicationController
+class V1::EmployeesController < ApplicationController
 
   def show
     @employee = Employee.find_by(id: params[:id])
