@@ -1,4 +1,4 @@
-class V1::EmployeesController < ApplicationController
+class Api::V1::EmployeesController < ApplicationController
 
   def show
     @employee = Employee.find_by(id: params[:id])
@@ -25,6 +25,5 @@ class V1::EmployeesController < ApplicationController
     @employee.destroy
     render json: { message: "Employee #{params[:id]} successfully deleted!" }
   end
-
 
 end
