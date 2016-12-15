@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      get "/employee/:id", to: "employees#show"
+      get "/employees/:id", to: "employees#show"
       get "/employees", to: "employees#index"
       post "/employees", to: "employees#create"
-      patch "/employee/:id", to: "employees#update"
-      delete "/employee/:id", to: "employees#destroy"
+      patch "/employees/:id", to: "employees#update"
+      delete "/employees/:id", to: "employees#destroy"
     end
 
     namespace :v2 do
